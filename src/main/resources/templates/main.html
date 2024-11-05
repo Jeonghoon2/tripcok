@@ -5,6 +5,7 @@
     <link rel="stylesheet" as="style" crossorigin
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link th:href="@{/css/main.css}" rel="stylesheet"/>
     <title>트립콕</title>
 </head>
@@ -26,21 +27,187 @@
         <label><input type="text" class="search-box"></label>
     </div>
 
-    <div class="banner-container">
-        <div class="banner-item">
-            <img th:src="@{/image/banner1.png}" alt="">
-        </div>
-        <div class="banner-item">
-            <img th:src="@{/image/banner2.png}" alt="">
-        </div>
-        <div class="banner-slide-btns">
-            <div class="banner-slide-btn-left">
-                <i class="bi bi-chevron-left"></i>
+    <div class="swiper mySwiper banner-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner-item">
+                <img th:src="@{/image/banner1.png}" alt="">
             </div>
-            <div class="banner-slide-btn-right">
-                <i class="bi bi-chevron-right"></i>
+            <div class="swiper-slide banner-item">
+                <img th:src="@{/image/banner2.png}" alt="">
+            </div>
+            <div class="swiper-slide banner-item">
+                <img th:src="@{/image/banner3.png}" alt="">
             </div>
         </div>
+
+        <div class="banner-slide-btn-left slide-btn swiper-button-prev ">
+            <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="banner-slide-btn-right slide-btn swiper-button-next ">
+            <i class="bi bi-chevron-right"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <div class="recommend-container">
+        <div class="comment-title">여행 추천</div>
+        <div class="comment-subject">
+            <p>회원님의 마음에 어울리는 설램 가득한 </p>
+            <p>여행지를 추천해드려요</p>
+        </div>
+        <div class="recommend-nav-items">
+            <button class="recommend-nav-item r-ai">AI콕</button>
+            <button class="recommend-nav-item">산</button>
+            <button class="recommend-nav-item">바다</button>
+        </div>
+
+        <div class="recommend-card-list">
+
+            <div class="recommend-card">
+                <div class="recommend-card-img">
+                    <img th:src="@{/image/card1.png}">
+                </div>
+                <div class="recommend-card-desc">
+                    <div class="recommend-card-desc-title">여행지</div>
+                    <div class="recommend-card-desc-subject">이렇게 즐거울수가 있을까?</div>
+                </div>
+                <div class="recommend-region-pin">
+                    <p>강릉</p>
+                </div>
+            </div>
+
+            <div class="recommend-card">
+                <div class="recommend-card-img">
+                    <img th:src="@{/image/card2.png}">
+                </div>
+                <div class="recommend-card-desc">
+                    <div class="recommend-card-desc-title">여행지</div>
+                    <div class="recommend-card-desc-subject">이렇게 즐거울수가 있을까?</div>
+                </div>
+                <div class="recommend-region-pin">
+                    <p>경주</p>
+                </div>
+            </div>
+
+            <div class="recommend-card">
+                <div class="recommend-card-img">
+                    <img th:src="@{/image/card3.png}">
+                </div>
+                <div class="recommend-card-desc">
+                    <div class="recommend-card-desc-title">여행지</div>
+                    <div class="recommend-card-desc-subject">이렇게 즐거울수가 있을까?</div>
+                </div>
+                <div class="recommend-region-pin">
+                    <p>제주</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="recommend-meeting-container">
+            <div class="comment-title">모임 추천</div>
+            <div class="comment-subject">
+                <p>회원님의  취향과 비슷한 사람들이 회원님을</p>
+                <p>기다리고 있어요</p>
+            </div>
+
+            <div class="recommend-meeting-list">
+
+                <div class="recommend-meeting-card">
+                    <div class="recommend-meeting-img-box">
+                        <img th:src="@{/image/meet1.png}">
+                    </div>
+                    <div class="recommend-meeting-desc-box">
+                        <div class="recommend-meeting-title">운전은 맡겨 주세요!</div>
+                        <div class="recommend-meeting-peoples">
+                            <div class="recommend-meeting-people-icons">
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p1.png}">
+                                </div>
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p2.png}">
+                                </div>
+                            </div>
+                            <p>2명</p>
+                            <div class="recommend-meeting-people-desc"></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="recommend-meeting-bool">
+                        <div class="meeting-bool-dot meet-open"></div>
+                    </div>
+                </div>
+
+                <div class="recommend-meeting-card">
+                    <div class="recommend-meeting-img-box">
+                        <img th:src="@{/image/meet1.png}">
+                    </div>
+                    <div class="recommend-meeting-desc-box">
+                        <div class="recommend-meeting-title">운전은 맡겨 주세요!</div>
+                        <div class="recommend-meeting-peoples">
+                            <div class="recommend-meeting-people-icons">
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p1.png}">
+                                </div>
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p2.png}">
+                                </div>
+                            </div>
+                            <p>2명</p>
+                            <div class="recommend-meeting-people-desc"></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="recommend-meeting-bool">
+                        <div class="meeting-bool-dot meet-open"></div>
+                    </div>
+                </div>
+
+                <div class="recommend-meeting-card">
+                    <div class="recommend-meeting-img-box">
+                        <img th:src="@{/image/meet1.png}">
+                    </div>
+                    <div class="recommend-meeting-desc-box">
+                        <div class="recommend-meeting-title">운전은 맡겨 주세요!</div>
+                        <div class="recommend-meeting-peoples">
+                            <div class="recommend-meeting-people-icons">
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p1.png}">
+                                </div>
+                                <div class="recommend-meeting-people-icon">
+                                    <img th:src="@{/image/p2.png}">
+                                </div>
+                            </div>
+                            <p>2명</p>
+                            <div class="recommend-meeting-people-desc"></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="recommend-meeting-bool">
+                        <div class="meeting-bool-dot meet-open"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
 </div>
 
