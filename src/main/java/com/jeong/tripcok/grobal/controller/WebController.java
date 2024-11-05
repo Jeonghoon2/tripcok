@@ -10,4 +10,9 @@ public class WebController {
     public String main() {
         return "main";
     }
+
+    @GetMapping("/register/agreement")
+    public String agreement() {
+        return "agreement";
+    }
 }

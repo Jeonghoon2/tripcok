@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: pretendard;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.title-box {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+}
+
+.title-one {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.title-two {
+    font-size: 24px;
+    font-weight: bold;
+    color: #A0A0A0;
+}
+
+.agreement-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-agreement-box {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: fit-content;
+}
+
+.check-circle-big {
+    width: 39px;
+    height: 39px;
+    border: 2px solid #C4C4C4;
+    border-radius: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-check {
+    font-size: 24px;
+    color: #C4C4C4;
+}
+
+.all-agreement-box > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #C4C4C4;
+}
+
+.comment {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.required-agreement-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.required-agreement-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.check-circle-small {
+    width: 29px;
+    height: 29px;
+    border-radius: 99px;
+    border: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.required-agreement-box > p {
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.agreement-submit {
+    cursor: pointer;
+    margin-top: 70px;
+    width: 100%;
+    height: 55px;
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.box-active {
+    width: 31px;
+    height: 31px;
+    background: linear-gradient(225deg, #1769FF 0%, #A069FF 100%);
+    border: none;
+}
+
+.box-active > i {
+    color: white;
+}
+
+.big-box-active {
+    min-width: 43px;
+    min-height: 43px;
+    background: linear-gradient(225deg, #1769FF 0%, #A069FF 100%);
+    border: none;
+}
+
+.big-box-active > i {
+    color: white;
+}
+
+

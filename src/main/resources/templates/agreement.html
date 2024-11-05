@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/agreement.css}" rel="stylesheet"/>
+
+    <link rel="stylesheet" as="style" crossorigin
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>트립콕 이용약관</title>
+</head>
+<body>
+<script type="text/javascript" th:src="@{/js/agreement.js}"></script>
+
+<div class="container">
+    <a href="/" class="title-box">
+        <p class="title-one">TripCok</p>
+        <p class="title-two">이용약관</p>
+    </a>
+
+    <div class="agreement-container">
+        <div class="all-agreement-box">
+            <div class="check-circle-big">
+                <i class="bi bi-check"></i>
+            </div>
+            <p>약관 전체 동의</p>
+        </div>
+
+        <p class="comment">필수 동의 항목</p>
+
+        <div class="required-agreement-list">
+
+            <div class="required-agreement-box ">
+                <div class="check-circle-small">
+                    <i class="bi bi-check"></i>
+                </div>
+                <p>[필수] 이용약관 동의</p>
+            </div>
+
+            <div class="required-agreement-box">
+                <div class="check-circle-small">
+                    <i class="bi bi-check"></i>
+                </div>
+                <p>[필수] 전자금융거래 이용약관</p>
+            </div>
+
+            <div class="required-agreement-box">
+                <div class="check-circle-small">
+                    <i class="bi bi-check"></i>
+                </div>
+                <p>[필수] 개인정보 수집동의서</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="agreement-submit">다음단계</button>
+</div>
+</body>
+</html>
