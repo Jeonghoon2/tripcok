@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: pretendard;
+}
+
+.container{
+    max-width: 1440px;
+    min-width: 1440px;
+    height: fit-content;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.header{
+    max-width: 1440px;
+    min-width: 1440px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.header-btns>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #3c3c3c;
+    font-weight: 600;
+}
+.nav{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav-item{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.active{
+    border-bottom: 5px solid #3c3c3c;
+}
+
+.search-box{
+    border: 1px solid #C2C2C2;
+    width: 360px;
+    height: 40px;
+    border-radius: 99px;
+    padding-left: 20px;
+}
+
+.banner-container{
+    width: 1440px;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.banner-item{
+    width: 692px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.banner-slide-btns{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+}
+
+.banner-slide-btn-left{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    box-shadow: 0 0 .8rem rgba(0,0,0,.13);
+    position: absolute;
+    left: -1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.banner-slide-btn-right{
+    position: absolute;
+    right: -1.3rem;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    box-shadow: 0 0 .8rem rgba(0,0,0,.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bi-chevron-left{
+    font-size: 18px;
+}
+
+
+.bi-chevron-right{
+    font-size: 18px;
+}
