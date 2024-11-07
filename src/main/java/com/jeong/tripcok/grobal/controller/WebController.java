@@ -15,4 +15,14 @@ public class WebController {
     public String agreement() {
         return "agreement";
     }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/register.css}" rel="stylesheet"/>
+    <link rel="stylesheet" as="style" crossorigin
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>트립콕 회원가입</title>
+</head>
+<body>
+<script type="text/javascript" th:src="@{/js/register.js}"></script>
+<div class="container">
+
+    <a href="/" class="title-box">
+        <p class="title-one">TripCok</p>
+        <p class="title-two">회원가입</p>
+    </a>
+
+    <!-- 이메일 등록-->
+    <div class="sub-desc">
+        <p>이메일</p>
+    </div>
+    <div class="input-box">
+        <i class="bi bi-envelope input-emo"></i>
+        <input type="text" placeholder="example@example.com">
+    </div>
+
+    <div class="sub-desc"><p>비밀번호</p></div>
+    <label class="input-box">
+        <input type="password">
+        <i class="bi bi-file-lock input-emo"></i>
+    </label>
+
+    <div class="sub-desc"><p>비밀번호 확인</p></div>
+    <label class="input-box">
+        <i class="bi bi-file-lock2 input-emo"></i>
+        <input type="password">
+    </label>
+
+    <div class="sub-desc"><p>생년월일</p></div>
+    <label class="input-box ">
+        <i class="bi bi-calendar input-emo"></i>
+        <input type="text" placeholder="20000101">
+    </label>
+
+    <div class="sub-desc"><p>성별</p></div>
+    <div class="input-box gender-box">
+        <button class="gender-btn male" onclick="toggleActive(this)">남성</button>
+        <button class="gender-btn female" onclick="toggleActive(this)">여성</button>
+    </div>
+
+    <div class="sub-desc"><p>휴대폰 번호</p></div>
+    <label class="input-box">
+        <i class="bi bi-telephone input-emo"></i>
+        <input type="text" placeholder="010-0000-0000">
+    </label>
+
+
+    <button class="register-submit">회원가입</button>
+
+</div>
+</body>
+</html>

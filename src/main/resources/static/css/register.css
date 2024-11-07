@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: pretendard;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.title-box {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.title-one {
+    font-size: 32px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.title-two {
+    font-size: 24px;
+    color: #A0A0A0;
+    font-weight: bold;
+}
+
+.input-box {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input[type="text"], input[type="password"] {
+    width: 365px;
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    color: #3c3c3c;
+    outline: none;
+    transition: 0.3s border-radius ease-in-out, 0.3s border ease-in-out;
+    padding-left: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: -1;
+}
+
+.input-emo {
+    position: absolute;
+    top: 32%;
+    left: 10px;
+    font-size: 16px;
+    color: #A0A0A0;
+    z-index: 5;
+    transition: 0.3s font-size ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-radius: 10px;
+    border: 1px solid #3c3c3c;
+}
+
+.sub-desc {
+    width: 400px;
+}
+
+.sub-desc > p {
+    color: #A0A0A0;
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+.gender-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gender-btn {
+    cursor: pointer;
+    width: 49%;
+    height: 55px;
+    border: none;
+    background-color: #EBEBEB;
+    color: #A0A0A0;
+    transition: 0.3s border-radius ease-in-out;
+}
+
+.gender-btn:hover{
+    border-radius: 10px;
+}
+
+.gender-active{
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.register-submit {
+    cursor: pointer;
+    width: 400px;
+    height: 55px;
+    border: none;
+    background-color: #EBEBEB;
+    color: #A0A0A0;
+    transition: 0.3s border-radius ease-in-out;
+}
+
+.register-submit:hover{
+    border-radius: 10px;
+}

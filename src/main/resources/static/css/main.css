@@ -4,6 +4,10 @@
     font-family: pretendard;
 }
 
+.a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1400px;
     min-width: 1400px;
@@ -24,6 +28,10 @@
 .logo {
     font-size: 32px;
     font-weight: bold;
+    cursor: pointer;
+    color: #3c3c3c;
+    text-decoration: none;
+
 }
 
 .header-btns {
@@ -49,11 +57,38 @@
     margin-bottom: 40px;
 }
 
+.nav-item-box {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
 .nav-item {
     width: 100px;
     height: 50px;
     line-height: 50px;
     text-align: center;
+    text-decoration: none;
+    color: #3c3c3c;
+    font-weight: 400;
+    top: 0;
+    transition: 0.2s font-weight ease-in-out,
+    0.2s font-size ease-in-out,
+    0.2s top ease-in-out;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.nav-item:hover {
+    height: 100px;
+    font-weight: bold;
+    top: -5px;
+    font-size: 18px;
 }
 
 .active {
@@ -370,18 +405,19 @@
     object-fit: fill;
 }
 
-.recommend-meeting-bool{
+.recommend-meeting-bool {
     position: absolute;
     right: 20px;
 
 }
-.meeting-bool-dot{
+
+.meeting-bool-dot {
     width: 10px;
     height: 10px;
     border-radius: 99px;
 
 }
 
-.meet-open{
+.meet-open {
     background-color: #00FF80;
 }

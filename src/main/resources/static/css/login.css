@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: pretendard;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-box {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.title-one {
+    font-size: 32px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.title-two {
+    font-size: 24px;
+    color: #A0A0A0;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box > input {
+    width: 365px;
+    height: 50px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: 1px solid #EBEBEB;
+    outline: none;
+    transition: 0.3s border ease-in-out;
+}
+
+.input-box > input:focus {
+    border: 1px solid #3c3c3c;
+}
+
+.input-emo {
+    color: #A0A0A0;
+    position: absolute;
+    top: 32%;
+    left: 10px;
+}
+
+.login-info-save {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.info-save-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 99px;
+    border: 1px solid #A0A0A0;
+    color: #A0A0A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-check {
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.login-info-save > p {
+    color: #A0A0A0;
+}
+
+.login-btn {
+    margin-top: 25px;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(89.19deg, #A069FF 0%, #1769FF 99.87%);
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.login-nav-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.login-nav-container > a {
+    color: #A0A0A0;
+    font-size: 14px;
+}
+
+.register-btn {
+    color: #A069FF !important;
+}

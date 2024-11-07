@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" as="style" crossorigin
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link th:href="@{/css/login.css}" rel="stylesheet"/>
+    <title>트립콕 로그인</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="title-box">
+            <p class="title-one">TripCok</p>
+            <p class="title-two">로그인</p>
+        </a>
+
+        <div class="input-container">
+
+            <label class="input-box">
+                <i class="bi bi-envelope input-emo"></i>
+                <input type="text" placeholder="이메일">
+            </label>
+
+            <label class="input-box">
+                <i class="bi bi-key input-emo"></i>
+                <input type="password" placeholder="비밀번호">
+            </label>
+
+            <div class="login-info-save">
+                <div class="info-save-circle">
+                    <i class="bi bi-check"></i>
+                </div>
+                <p>로그인 정보 저장</p>
+            </div>
+        </div>
+
+        <button class="login-btn">로그인</button>
+
+        <div class="login-nav-container">
+            <a href="">아이디 찾기</a>
+            <a href="">비밀번호 찾기</a>
+            <a href="/register/agreement" class="register-btn">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
+
