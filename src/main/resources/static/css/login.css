@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: end;
+    font-weight: bold;
+    gap: 10px;
+
+}
+
+.logo_title1{
+    font-size: 32px;
+}
+
+.logo_title2{
+    font-size: 24px;
+    color: #A0A0A0;
+}
+
+.id_password{
+    margin-top: 68px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #EBEBEB;
+}
+
+.login_save {
+    cursor: pointer;
+    margin-top: 11px;
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+.login_button {
+    margin-top: 24px;
+    height: 50px;
+    background: linear-gradient(89.19deg, #A069FF 0%, #1769FF 99.87%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login_nevs{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 39px;
+
+}
+
+.login_nevs>a{
+    font-size: 12px;
+    color: #A0A0A0;
+    text-decoration: none;
+}

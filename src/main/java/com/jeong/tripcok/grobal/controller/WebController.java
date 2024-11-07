@@ -11,6 +11,9 @@ public class WebController {
         return "main";
     }
 
+    @GetMapping("/login")
+    public String login(){ return "login";}
+
     @GetMapping("/register/agreement")
     public String agreement() {
         return "agreement";
